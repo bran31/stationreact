@@ -6,9 +6,9 @@ export default function Navigation() {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light-2">
             
-            <a className="navbar-brand" href="#">
-                <img src="patch2.png" className="patch"/>Station 43
-            </a>
+            <Link to="/">
+            <div className="navbar-brand" >Station 43</div>
+            </Link>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
