@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+
+.jumbotron {
+  color: #ccc;
+  position: relative;
+  z-index: -2;
+}
+
+.jumboimg {
+  background: url(./static/img/commandcar.jpg) no-repeat fixed bottom;
+  background-size: cover;
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+}
+
+.overlay {
+  background-color: #000000;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.patch {
+  height: 50%;
+  width: 50%;
+  object-fit: contain;
+}
