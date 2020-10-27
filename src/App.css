@@ -37,20 +37,6 @@
   }
 }
 
-.jumbotron {
-  color: #ccc;
-  position: relative;
-  z-index: -2;
-}
-
-.jumboimg {
-  background: url(./components/static/img/commandcar.jpg) no-repeat fixed bottom;
-  background-size: cover;
-  width: auto;
-  height: 100%;
-  object-fit: contain;
-}
-
 .overlay {
   background-color: #000000;
   opacity: 0.6;
@@ -67,3 +53,31 @@
   width: 50%;
   object-fit: contain;
 }
+
+.hero-image {
+  min-height: calc(100vh - 66px);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./components/img/commandcar.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-top: 100px;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+/* .roomsHero {
+  min-height: calc(100vh - 66px);
+  background: url("./images/defaultBcg.jpeg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */

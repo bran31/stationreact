@@ -13,6 +13,8 @@ import Tour3 from './components/tours/Tour3'
 import Eplt from './components/platoons/Eplt'
 import Fplt from './components/platoons/Fplt'
 import Dplt from './components/platoons/Dplt'
+import Form from './components/forms/Form'
+
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
 function App() {
@@ -35,11 +37,11 @@ function App() {
             <Route path="/eplt" component={Eplt} />
             <Route path="/fplt" component={Fplt} />
             <Route path="/dplt" component={Dplt} />
-
+            <Route path="/add" component={Form} />
           </Switch>  
         </div>
         <div className="col 3">
-          {/* <Twitter /> */}
+          <Twitter />
         </div>
       </div>
     </Router>
