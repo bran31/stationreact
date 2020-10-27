@@ -1,10 +1,10 @@
 import React from 'react'
-import Table from './Table'
+import Table  from '../common/Table'
 
-export default function BLS() {
+export default function ALS() {
     return (
         <div className="container">
-            <h1 className="text-center">BLS</h1>
+            <h1 className="text-center">ALS</h1>
             <Table />
         </div>
     )

@@ -7,7 +7,9 @@ export default function Navigation() {
         <nav className="navbar navbar-expand-lg navbar-light bg-light-2">
             
             <Link to="/">
-            <div className="navbar-brand" >Station 43</div>
+            <div className="navbar-brand">
+                <img src="./static/img/patch2.png" />  Station 43
+            </div>
             </Link>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
@@ -43,9 +45,10 @@ export default function Navigation() {
                         Tours
                     </a>
                         <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a className="dropdown-item disabled" href="#" >Tour 1</a></li>
-                            <li><a className="dropdown-item" href="#" >Tour 2</a></li>
-                            <li><a className="dropdown-item" href="#" >Tour 3</a></li>                           
+                            <Link to='/tour1'><li className="dropdown-item">Tour 1</li></Link>
+                            <Link to='/tour2'><li className="dropdown-item">Tour 2</li></Link>
+                            <Link to='/tour3'><li className="dropdown-item">Tour 3</li></Link>
+                                                  
                         </ul>
                     </li>
                     <li className="nav-item dropdown">
@@ -53,9 +56,9 @@ export default function Navigation() {
                         Platoons
                     </a>
                         <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a className="dropdown-item" href="#" >E Platoon</a></li>
-                            <li><a className="dropdown-item" href="#" >F Platoon</a></li>
-                            <li><a className="dropdown-item" href="#" >D Platoon</a></li>                           
+                            <Link to="/eplt"><li className="dropdown-item">E Platoon</li></Link>
+                            <Link to="/fplt"><li className="dropdown-item">F Platoon</li></Link>
+                            <Link to="/Dplt"><li className="dropdown-item">D Platoon</li></Link>
                         </ul>
                     </li>
                 </ul>

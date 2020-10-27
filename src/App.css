@@ -44,7 +44,7 @@
 }
 
 .jumboimg {
-  background: url(./static/img/commandcar.jpg) no-repeat fixed bottom;
+  background: url(./components/static/img/commandcar.jpg) no-repeat fixed bottom;
   background-size: cover;
   width: auto;
   height: 100%;
