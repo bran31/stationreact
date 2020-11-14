@@ -27,6 +27,7 @@ code {
   background: #607b7d;
 }
 
-.nav-link.a:hover {
+.nav-link:hover {
   color: whitesmoke;
+  text-decoration: none;
 }

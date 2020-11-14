@@ -55,14 +55,12 @@
 }
 
 .hero-image {
-  min-height: calc(100vh - 66px);
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./components/img/commandcar.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  margin-top: 100px;
+  background-image: url(./components/img/commandcar.jpg); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 700px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 .hero-text {
@@ -70,14 +68,22 @@
   position: absolute;
   top: 10%;
   left: 50%;
+  text-shadow: 2px 2px #000;
   transform: translate(-50%, -50%);
   color: white;
 }
 
-/* .roomsHero {
-  min-height: calc(100vh - 66px);
-  background: url("./images/defaultBcg.jpeg") center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
+.nav-image {
+  background-image: url(./components/img/patch2.png);
+  height: 4.5vh;
+  width: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar-text {
+  text-align: center;
+  color: #fff;
+  text-shadow: #000;
+}
